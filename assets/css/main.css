@@ -358,6 +358,19 @@ hr {
   width: 400px;
   border-radius: 50%;
 }
+
+.project-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 30px;
+  column-gap: 90px;
+}
+video {
+  max-width: 80%;
+  height: auto;
+}
 /* Button */
 
 input[type="submit"],
@@ -1916,6 +1929,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 @media screen and (max-width: 736px) {
+  h1 {
+    font-size: 1rem;
+  }
   #header {
     padding-bottom: 3rem;
   }
@@ -2133,6 +2149,9 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 @media screen and (max-width: 736px) {
+  h2 {
+    font-size: large;
+  }
   #main > .post {
     padding: 4rem 2rem 2rem 2rem;
   }
@@ -2144,11 +2163,14 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
   #main > .post header.major > h1,
   #main > .post header.major h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
   }
 
+  .project-tools {
+    display: block;
+  }
   .profile {
     display: block;
   }
@@ -2171,6 +2193,10 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     margin-right: auto;
     height: auto;
     max-width: 100%;
+  }
+
+  .project-tools {
+    display: block;
   }
 }
 
@@ -3082,17 +3108,4 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 a {
   text-decoration: none important!;
-}
-
-.project-tools {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  margin-bottom: 30px;
-  column-gap: 90px;
-}
-video {
-  width: 320px;
-  height: 240px;
 }

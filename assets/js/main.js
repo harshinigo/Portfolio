@@ -223,7 +223,7 @@ function submitform(event) {
   }
   Email.send({
     SecureToken: "20e13d36-6dea-4950-b20e-edfd8b56dda5",
-    To: "chaitra.prathapg@gmail.com",
+    To: "harshiigowdac21@gmail.com",
     From: dataToSend.email,
     Subject: "contact form",
     Body: dataToSend.message,
